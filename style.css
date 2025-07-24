@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color:#161a33;
+}
+
+.dark-theme{
+    --primary-color:#161a33;
+    --secondary-color:#dadce8;
+}
+
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--primary-color);
+    font-family: sans-serif;
+    position: relative;
+}
+
+nav{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+nav ul li a:hover{
+    color: #ff4321;
+    font-weight: 600;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    margin-left: 42vw;
+    
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+.info{
+    margin-left: 8%;
+    margin-top: 15%;
+    max-width: 40vw;
+}
+
+.info h1{
+    font-size: 70px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+span{
+    color: #ff4321;
+}
+
+
+.info p{
+    color: var(--secondary-color);
+    line-height: 22px;
+}
+.info a{
+    background-color: var(--secondary-color);
+    margin: 30px 0;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: var(--primary-color);
+    display: inline-block;
+    border-radius: 5px;
+}
+
+
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.img-box img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s , left 1s;
+}
+
+.img-box:hover .back-img{
+    bottom: 40px;
+}
+.img-box:hover .front-img{
+    left: 55%;
+}
+
+.socials{
+    margin: 20px 0 0 120px;
+}
+.socials svg{
+    width: 30px;
+   
+}
+.socials a{
+    text-decoration: none;
+    margin-right: 15px;
+    fill: var(--secondary-color);
+
+}
+
+.socials a:hover{
+    fill: #ff4321;
+}
+
+#theme-switch{
+    cursor: pointer;
+    width: 30px;  
+}
